@@ -9,17 +9,24 @@
 </head>
 <body>
     <div class="background">
-        <img src="Stand-With-Ukraine.png">
-        <img src="maksym-tymchyk-KMDGu1blGi8-unsplash.jpg" alt="picture">
+        <img src="images/wheat.jpg" alt="picture" class="img2">
+        <div class="logo">
+            <img src="images/logo.png" id="img1">
+        </div>
+        
+        
     </div>
     <div class="signup-section">
         <div class="header"> 
-            <div>
-                <h1>This is not a real online service! Give a helping hand to Ukraine by signing up for membership.<br>Sign up now to get started.</h1>
+            <div class="header-content">
+                <h1>This is not a real online service! Give a helping hand to Ukraine by signing up for voluntary work.<br>Sign up now to get started.</h1>
                 <h1 id="specialheader">Volunteer now!</h1>
             </div>
+            
+            
         </div>
         <div class="form-section">
+            
             <form action="#" id="form">
 
                 <div class="colored">
@@ -29,13 +36,13 @@
                         
                         <div class="section">
                             <label for="fname">First name <span style="color: #c41212;">*</span></label>
-                            <input type="text" id="fname" >
+                            <input type="text" id="fname" required>
                         
                             <label for="email">Email <span style="color: #c41212;">*</span></label>
-                            <input type="email" id="email" >
+                            <input type="email" id="email" required>
                             
                             <label for="password">Password <span style="color: #c41212;">*</span></label>
-                            <input type="password" id="password" onChange="onChange()" required minlength="5" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter, one lowercase letter, number and be minimum of 5 characters long">
+                            <input required type="password" id="password" onChange="onChange()" required minlength="5" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter, one lowercase letter, number and be minimum of 5 characters long">
                             </div>
 
                         <div class="section">
@@ -50,18 +57,23 @@
                         </div>
                     </div>
                 </div>
-
-                <button type="submit" id="btnSubmit" onclick="clearForm()">Sign me up!</button>
+            
+                <div class="button">
+                    <button type="submit" id="btnSubmit" onclick="clearForm()">Sign me up!</button>
+                </div>
             </form>
             
-        </div>
-        <div class="button-section">
             
-            <p>Already have signed up? <a href="#">Click here for more information</a></p>
+        </div>
+        <div class="signed-up">
+            <p>Already signed up? <a href="#">Click here</a> for more information</p>
         </div>
     </div>
 </body>
 </html>
+
+
+
 <script>
     const passwd_again = document.querySelector('input[id=password-again]');
 

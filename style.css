@@ -1,59 +1,92 @@
+:root{
+    --universal_size--: 20px;
+    --universal_padding--: 40px;
+}
+
+
 body{
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: row;
+    font-family: "sans-serif";
+    font-size: var(--universal_size--);
 }
 h1{
+    font-size: var(--universal_size--);
     margin: 0;
     padding: 0;
-    font-size: 20px;
 }
+
+
+
+
+/*images on the left*/
 .background {
-    
-    
-    
     margin: 0;
     padding: 0;
+    position: relative;
 }
-img {
+
+.img2 {
     height: 100vh;
     max-width: 100%;
+    position: relative;
 }
 
-
+.logo{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 15%;
+    width: 100%;
+}
+#img1 {
+    
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 15%;
+    left: 33%;
+}
 
 
 /*Form*/
 .signup-section{
     flex-grow: 1;
-    background-color: rgb(197, 197, 247);
+    background-color: rgb(182, 182, 182);
     max-height: 100vh;
-}
-
-.signup-section > div{
     display: flex;
-    height: calc(90vh/3);
     flex-direction: column;
 }
 
 
+/*header text*/
 .header{
-    position: relative;
-    margin-left: 50px;
-    max-width: 45vw;
+    display: flex;
+    height: 20vh;
+    padding-top: 100px;
 }
-.header > div {
-    position: absolute;
-    bottom: 50px;
+.header-content{
+    display: inherit;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--universal_padding--);
+}
+
+/* form with inputs and all*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 form > .colored>.sections > .section{
-    display: flex;
+    display: inherit;
     flex-direction: column;
 }
+
 .colored{
-    background-color: whitesmoke;
-    padding: 25px;
+    background-color: white;
+    padding: var(--universal_padding--);
     
 }
 .section {
@@ -65,31 +98,32 @@ form > .colored>.sections > .section{
     flex-direction: row;
     gap: 5vw;
  }
-.colored > *{
-    margin-left: 25px;
-}
+
+
+
+
 #btnSubmit{
     margin: 0;
     border: 0;
     border-radius: 5px;
-    margin: 20px 50px ;
+    margin-left: var(--universal_padding--) ;
     width: 200px;
-    height: 40px;
+    height: 50px;
     background-color: #596D48;
-    color: white;;
-    border: 2px solid black;
+    color: white;
+    font-size: 20px;
 }
 #btnSubmit:hover{
     cursor: grab
 }
 #btnSubmit:active{
-   
+    cursor: pointer;
     box-shadow: 5px 5px 5px black;
 }
-.button-section{
-    margin-top: 100px;
-    margin-left: 50px;
-}
+
+
+
+
 
 #specialheader{
     padding-top: 20px;
@@ -99,7 +133,7 @@ input{
     height: 30px;
     width: 260px;
     border-radius: 5px;
-    outline: black;
+    outline: gray;
     outline-width: 1px;
 }
 input:focus{
@@ -115,4 +149,8 @@ input:focus{
     border:3px solid #c41212;
 }
 
-
+.signed-up{
+    margin-top: -10;
+    padding-left: var(--universal_padding--);
+    font-size: 18px;
+}
