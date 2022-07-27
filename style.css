@@ -161,8 +161,7 @@ input{
     width: 260px;
     border-radius: 5px;
     outline: gray;
-    out
-    line-width: 1px;
+    outline-width: 1px;
 }
 input:focus{
     outline: none;
