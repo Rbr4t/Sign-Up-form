@@ -13,7 +13,9 @@
         <div class="logo">
             <img src="images/logo.png" id="img1">
         </div>
-        
+        <div class="author">
+            <p>Image by <a href="https://unsplash.com/photos/KMDGu1blGi8">Maksym Tymchyk</a></p>
+        </div>
         
     </div>
     <div class="signup-section">
@@ -85,11 +87,12 @@
         } else if (passwd.value != passwd_again.value){
             passwd_again.setCustomValidity('Passwords do not match');
             passwd_again.style.border = "3px solid #c41212";
-        }
+        };
     }; 
+    /*
     function clearForm() {
-        document.getElementById('form').reset()
+        document.getElementById('form').reset();
         passwd_again.style.border = "3px solid #c41212";
-    }
-    
+    };
+    */
 </script>
